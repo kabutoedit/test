@@ -1,0 +1,159 @@
+/* Slider */
+
+/* body {
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f4f4f4;
+}
+.swiper {
+	width: 80%;
+	max-width: 600px;
+}
+.swiper-slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 24px;
+	background: #007aff;
+	color: white;
+	height: 300px;
+}
+
+.swiper-button-next {
+	z-index: 100;
+	color: white;
+}
+
+.swiper-button-prev {
+	z-index: 100;
+	color: white;
+} */
+
+/* accordion */
+
+/* body {
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f4f4f4;
+}
+.accordion {
+	width: 80%;
+	max-width: 600px;
+}
+.accordion-item {
+	border-bottom: 1px solid #ccc;
+}
+.accordion-header {
+	background: black;
+	color: white;
+	padding: 15px;
+	cursor: pointer;
+	font-size: 18px;
+}
+.accordion-content {
+	height: 50px;
+	display: none;
+	padding: 0 15px;
+	background: white;
+	transition: max-height 0.3s ease-out, padding 0.3s ease-out;
+} */
+
+/* micromodal */
+
+body {
+	font-family: Arial, sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	background-color: #f4f4f4;
+	margin: 0;
+}
+
+button[data-micromodal-trigger] {
+	background-color: #007aff;
+	color: white;
+	padding: 10px 20px;
+	border: none;
+	cursor: pointer;
+	font-size: 16px;
+	border-radius: 5px;
+	transition: background-color 0.3s;
+}
+
+button[data-micromodal-trigger]:hover {
+	background-color: #005f99;
+}
+
+.modal__overlay {
+	background: rgba(0, 0, 0, 0.7);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 1000;
+	opacity: 0;
+	pointer-events: none;
+	transition: opacity 0.3s ease;
+}
+
+.modal.is-open .modal__overlay {
+	opacity: 1;
+	pointer-events: all;
+}
+
+.modal__container {
+	background: white;
+	padding: 20px;
+	border-radius: 8px;
+	width: 90%;
+	max-width: 500px;
+	animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+	0% {
+		transform: translateY(-30px);
+		opacity: 0;
+	}
+	100% {
+		transform: translateY(0);
+		opacity: 1;
+	}
+}
+
+.modal__close {
+	background: transparent;
+	border: none;
+	font-size: 24px;
+	color: #000;
+	cursor: pointer;
+}
+
+.modal__footer {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.modal__btn {
+	padding: 10px 15px;
+	background-color: #007aff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.modal__btn:hover {
+	background-color: #005f99;
+}

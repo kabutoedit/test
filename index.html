@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title></title>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.css"
+		/>
+
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<!-- <div class="swiper">
+			<div class="swiper-wrapper">
+				<div class="swiper-slide">Слайд 1</div>
+				<div class="swiper-slide">Слайд 2</div>
+				<div class="swiper-slide">Слайд 3</div>
+			</div>
+			<div class="swiper-pagination"></div>
+			<div class="swiper-button-next"></div>
+			<div class="swiper-button-prev"></div>
+		</div> -->
+
+		<!-- <div class="accordion">
+			<div class="accordion-item">
+				<div class="accordion-header" onclick="toggleAccordion(this)">
+					Раздел 1
+				</div>
+				<div class="accordion-content">Содержимое первого раздела.</div>
+			</div>
+			<div class="accordion-item">
+				<div class="accordion-header" onclick="toggleAccordion(this)">
+					Раздел 2
+				</div>
+				<div class="accordion-content">Содержимое второго раздела.</div>
+			</div>
+			<div class="accordion-item">
+				<div class="accordion-header" onclick="toggleAccordion(this)">
+					Раздел 3
+				</div>
+				<div class="accordion-content">Содержимое третьего раздела.</div>
+			</div>
+		</div> -->
+
+		<button class="open-modal-btn" data-micromodal-trigger="modal-1">
+			Открыть модалку
+		</button>
+
+		<div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+			<div class="modal__overlay" tabindex="-1" data-micromodal-close="">
+				<div
+					class="modal__container"
+					role="dialog"
+					aria-labelledby="modal-1-title"
+				>
+					<header class="modal__header">
+						<button
+							class="modal__close"
+							aria-label="Закрыть модалку"
+							data-micromodal-close="modal-1"
+						>
+							&times;
+						</button>
+						<h2 class="modal__title" id="modal-1-title">Заголовок модалки</h2>
+					</header>
+					<div class="modal__content">
+						<p>
+							Это содержимое модалки. Вы можете разместить здесь что угодно:
+							текст, форму, изображения и т.д.
+						</p>
+					</div>
+					<footer class="modal__footer">
+						<button class="modal__btn" data-micromodal-close>Закрыть</button>
+					</footer>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+		<script src="https://cdn.jsdelivr.net/npm/micromodal/dist/micromodal.min.js"></script>
+
+		<script src="app.js"></script>
+	</body>
+</html>
